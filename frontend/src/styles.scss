@@ -1,0 +1,35 @@
+/* PrimeNG & PrimeIcons */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+@import "primeflex/primeflex.css";
+
+/* Accesibilidad y Tipografía WCAG 2.1 AA */
+:root {
+  --primary-color: #0284c7;
+  --primary-hover: #0369a1;
+  --text-color: #1e293b;
+  --text-secondary: #475569;
+  --surface-ground: #f8fafc;
+  --surface-card: #ffffff;
+  --surface-border: #cbd5e1;
+  --focus-ring: 0 0 0 3px rgba(2, 132, 199, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--surface-ground);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Indicador de foco visible obligatorio para navegación por teclado */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
